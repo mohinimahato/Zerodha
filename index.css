@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 2px 1px 2px #eee;
+    box-sizing: border-box;
+}
+
+.navbar-tabs {
+    color: #666;
+    font-size: .9rem;
+    transition: color .3s;
+    display: inline-block;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.navbar-tabs:hover {
+
+    color: #387ed1;
+}
+
+.hero_text {
+    font-family: "Inter", serif;
+    font-size: 42px;
+    width: 100%;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #424242;
+}
+
+.hero_Subtext {
+    font-family: "Inter", serif;
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #424242;
+}
+
+.signup_btn {
+    background-color: #387ed1;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "Inter", serif;
+}
+
+.formLabel {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    width: 100%;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #424242;
+}
+
+.formLabelRes {
+    font-family: "Inter", serif;
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.7;
+    font-weight: 600;
+    color: #387ed1;
+    font-style: italic;
+}
+
+.formInput {
+    border-radius: 8px;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    font-weight: 500;
+    color: #424242;
+    padding-left: 2%;
+}
+
+.formInput::placeholder {
+    font-family: "Inter", serif;
+    padding-left: 2%;
+    font-style: italic;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #424242;
+}
+
+.calculator_heading {
+    font-family: "Inter", serif;
+    font-size: 22px;
+    width: 100%;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #424242;
+}
+
+@media(max-width:768px) {
+    .hero_text {
+        font-family: "Inter", serif;
+        font-size: 42px;
+        width: 100%;
+        line-height: 1;
+        font-weight: 500;
+        color: #424242;
+    }
+
+    .hero_Subtext {
+        font-family: "Inter", serif;
+        font-size: 18px;
+        width: 100%;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #424242;
+    }
+
+    .signup_btn {
+        background-color: #387ed1;
+        color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0) !important;
+        border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #bbb;
+        cursor: pointer;
+        padding: 10px 30px;
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        font-weight: 500;
+        text-decoration: none;
+        font-family: "Inter", serif;
+    }
+}

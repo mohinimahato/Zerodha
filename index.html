@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zerodha | By Mohini Mahato</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.jpg">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="mainContainer col-12">
+        <!-- Navbar  Start-->
+        <div class="col-12 navbar py-3 py-md-0">
+            <div class="col-11 mx-auto d-flex justify-content-around">
+                <div class="col-8 col-md-2 my-auto ">
+                    <div class="col-12 my-auto d-flex justify-content-around">
+                        <div class="col-6 my-auto">
+                            <div class="col-12 my-auto">
+                                <img src="./img/logo-img.png" alt="" class="logo-img w-100  my-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-8 d-none d-md-block ">
+                    <div class="col-10 ms-auto d-flex justify-content-around">
+                        <div class="col-1 navbar-tabs">Signup</div>
+                        <div class="col-1 navbar-tabs">About</div>
+                        <div class="col-1 navbar-tabs">Products</div>
+                        <div class="col-1 navbar-tabs">Pricing</div>
+                        <div class="col-1 navbar-tabs">Support</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Navbar  End-->
+        <!-- Hero Section Start -->
+        <div class="col-12">
+            <div class="col-md-7 mt-5 mx-auto">
+                <div class="col-11 mx-auto text-center">
+                    <div class="col-12">
+                        <img src="./img/Dashboard-img.png" alt="" class="w-100">
+                    </div>
+                    <div class="col-12 text-center hero_text pt-4 pt-md-3">
+                        Invest in everything
+                    </div>
+                    <div class="col-12 hero_Subtext mt-3 mt-md-3">
+                        Online platform to invest in stocks, derivatives, mutual funds, and more
+                    </div>
+                    <div class="col-7 col-md-6 mx-auto">
+                        <div class="col-12 mt-5">
+                            <a href="#" class="col-12 signup_btn">
+                                Sign Up Now
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Hero Section End -->
+        <!-- Calculator Start  -->
+        <div class="col-12 my-5 my-md-5">
+            <div class="col-10 mx-auto d-flex justify-content-around flex-column-reverse flex-md-row">
+                <div class="col-11 col-md-5 mx-auto mx-md-0">
+                    <div class="col-12">
+                        <div class="col-md-12">
+                            <img src="./img/interest-logo.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-md-5 mx-auto mx-md-0">
+                    <div class="col-12">
+                        <div class="col-12 text-center calculator_heading pt-3 pt-md-3">
+                            SIP Calculator
+                        </div>
+                        <form action="" class="" id="" name="interest-calculator">
+                            <div class="my-2">
+                                <label for="capital" class="formLabel">Investment Amount</label>
+                                <br>
+                                <input type="text" name="capital" id="capital" class="formInput py-2"
+                                    placeholder="Enter the amount">
+                            </div>
+                            <div class="my-2">
+                                <label for="years" class="formLabel"> Duration</label>
+                                <br>
+                                <input type="number" name="years" id="years" class="formInput py-2"
+                                    placeholder="Enter the no. of years you want to invest for">
+                            </div>
+                            <div class="my-2">
+                                <label for="rate" class="formLabel"> Interest Rate</label>
+                                <br>
+                                <input type="number" name="rate" id="rate" class="formInput py-2"
+                                    placeholder="Enter the interest rate">
+                            </div>
+                            <div class="my-4 col-md-6 mx-auto">
+                                <button class="col-12  signup_btn" type="button" onclick="calculate_Interest()">
+                                    Calculate Interest</button>
+                            </div>
+                            <div class="my-2 ">
+                                <label for="interestEarned" class="formLabelRes"> Interest Earned</label>
+                                <br>
+                                <input type="text" name="interestEarned" id="interestEarned" class="formInput py-2"
+                                    readonly>
+                            </div>
+                            <div class="my-2  ">
+                                <label for="years" class="formLabelRes"> Total amount you would receive</label>
+                                <br>
+                                <input type="text" name="finalAmt" id="finalAmt" class="formInput py-2" readonly>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Calculator End  -->
+
+    </div>
+
+</body>
+<script>
+
+
+    function calculate_Interest() {
+        let capital = document.getElementById('capital').value;
+        let duration = document.getElementById('years').value;
+        let rate = document.getElementById('rate').value / 100;
+        let finalAmt = document.getElementById('finalAmt');
+        let interestEarned = document.getElementById('interestEarned')
+        let interest = capital * duration * rate;
+        let expectedAmt = Number(capital) + Number(interest);
+        interestEarned.value = interest;
+        finalAmt.value = expectedAmt
+
+    }
+
+</script>
+
+</html>
