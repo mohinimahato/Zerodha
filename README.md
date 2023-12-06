@@ -15,7 +15,7 @@
 Getting Started
 Clone the Repository:
 
-*To check the live page: [Click]()*
+*To check the live page: [Click](https://mohinimahato.github.io/Zerodha/)*
 
 ## *Screenshots*
 - Hero Section
